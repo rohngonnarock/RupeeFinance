@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" ng-click="navbarProperties.isCollapsed = !navbarProperties.isCollapsed">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Rahl Rokks</a>
+            </div>
+            <div class="navbar-collapse collapse" collapse="navbarProperties.isCollapsed">
+                <ul class="nav navbar-nav">
+                    <li><a ui-sref="stateOne">State One</a></li>
+                    <li><a ui-sref="stateTwo">State Two</a></li>
+                    <li><a ui-sref="stateThree">State Three</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a ui-sref="loginRegister">Login / Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mainContent">
+    <div class="row">
+        <div class="col-md-6">
+            <div ui-view="containerOne"></div>
+        </div>
+        <div class="col-md-6">
+            <div ui-view="containerTwo"></div>
+        </div>
+    </div>
+    <div ng-view></div>
+</div>

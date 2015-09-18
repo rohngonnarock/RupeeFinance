@@ -1,0 +1,99 @@
+﻿<div class="container-fluid">
+    <div class="text-center">
+        <h1>Current US Dollar to Rupee Exchange Rates</h1>
+        <h2>(All values were last updated at 2015-07-16 15:30:01 UTC)</h2>
+    </div>
+</div>
+
+<div class="container-fluid" ng-controller="MoneyData">
+    <table class="table-striped table-hover">
+
+        <thead>
+            <tr>
+                <th colspan="2">
+                    <a href="http://www.axisbank.com/nri/remittances/default.asp">Axis Bank (Fixed)</a>
+                </th>
+                <th colspan="2">
+                    <a href="https://www.indusfastremit-us.com" class="ls">Indus Fast Remit (Fixed)</a>
+                </th>
+                <th colspan="2">
+                    <a href="http://www.money2india.com" class="ls">ICICI Money2India (Fixed)</a>
+                </th>
+                <th colspan="2">
+                    <a href="https://www.riamoneytransfer.com/countries/send-money-to-india" class="ls">Ria (Fixed)</a>
+                </th>
+                <th colspan="2">
+                    <a href="http://remit2india.com/index.jsp" class="ls">Remit2India (Fixed)</a>
+                </th>
+                <th colspan="2">
+                    <a href="https://www.transfast.com" class="ls">Trans-Fast (Fixed)</a>
+                </th>
+                <th colspan="2">
+                    <a href="https://www.westernunion.com/us/en/send-money-to-india.html" class="ls">Western Union (Fixed)</a>
+                </th>
+                <th colspan="2">
+                    <a href="https://www.xoom.com/india" class="ls">Xoom (Fixed)</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Amount</b></td>
+                <td><b>Rate</b></td>
+
+                <td><b>Amount</b></td>
+                <td><b>Rate</b></td>
+
+                <td><b>Amount</b></td>
+                <td><b>Rate</b></td>
+
+                <td><b>Amount</b></td>
+                <td><b>Rate</b></td>
+
+                <td><b>Amount</b></td>
+                <td><b>Rate</b></td>
+
+                <td><b>Amount</b></td>
+                <td><b>Rate</b></td>
+
+                <td><b>Amount</b></td>
+                <td><b>Rate</b></td>
+
+                <td><b>Amount</b></td>
+                <td><b>Rate</b></td>
+            </tr>
+
+            <tr ng-repeat="x in dataAxis">
+                <td>{{x}}</td>
+                <td>{{dataAxisRate[$index]}}</td>
+
+                <td>{{dataIndus[$index]}}</td>
+                <td>{{dataIndusRate[$index]}}</td>
+
+                <td>{{dataICICI[$index]}}</td>
+                <td>{{dataICICIRate[$index]}}</td>
+
+                <td>{{dataRia[$index]}}</td>
+                <td>{{dataRiaRate[$index]}}</td>
+
+                <td>{{dataRemit[$index]}}</td>
+                <td>{{dataRemitRate[$index]}}</td>
+
+                <td>{{dataTrans[$index]}}</td>
+                <td>{{dataTransRate[$index]}}</td>
+
+                <td>{{dataWestern[$index]}}</td>
+                <td>{{dataWesternRate[$index]}}</td>
+
+                <td>{{dataXoom[$index]}}</td>
+                <td>{{dataXoomRate[$index]}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
